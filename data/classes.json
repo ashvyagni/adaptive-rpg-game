@@ -1,0 +1,137 @@
+{
+  "knight": {
+    "name": "Knight",
+    "description": "A stalwart defender clad in heavy armor. High HP and defense, excels at protecting allies and enduring punishment.",
+    "icon": "knight",
+    "primary_stats": {
+      "maxhealth": 140,
+      "attack": 8,
+      "defense": 15,
+      "mana": 30,
+      "accuracy": 85,
+      "speed": 6,
+      "crit_chance": 3
+    },
+    "mana_regen": 2,
+    "starting_skills": ["shield_block", "taunt"],
+    "stat_growth": {
+      "maxhealth": 14,
+      "attack": 2,
+      "defense": 3,
+      "mana": 3,
+      "accuracy": 1,
+      "speed": 0,
+      "crit_chance": 0
+    },
+    "color": "#9ca3af",
+    "glow_color": "#60a5fa"
+  },
+  "mage": {
+    "name": "Mage",
+    "description": "A master of arcane arts. Low HP but devastating magical damage and fast mana regeneration.",
+    "icon": "mage",
+    "primary_stats": {
+      "maxhealth": 70,
+      "attack": 6,
+      "defense": 3,
+      "mana": 150,
+      "accuracy": 95,
+      "speed": 10,
+      "crit_chance": 10
+    },
+    "mana_regen": 8,
+    "starting_skills": ["fireball", "mana_shield"],
+    "stat_growth": {
+      "maxhealth": 6,
+      "attack": 3,
+      "defense": 1,
+      "mana": 15,
+      "accuracy": 1,
+      "speed": 1,
+      "crit_chance": 1
+    },
+    "color": "#a855f7",
+    "glow_color": "#c084fc"
+  },
+  "duelist": {
+    "name": "Duelist",
+    "description": "A swift and precise combatant. High critical chance and speed, excels at burst damage.",
+    "icon": "duelist",
+    "primary_stats": {
+      "maxhealth": 90,
+      "attack": 12,
+      "defense": 5,
+      "mana": 50,
+      "accuracy": 92,
+      "speed": 16,
+      "crit_chance": 18
+    },
+    "mana_regen": 4,
+    "starting_skills": ["riposte", "flourish"],
+    "stat_growth": {
+      "maxhealth": 8,
+      "attack": 3,
+      "defense": 1,
+      "mana": 4,
+      "accuracy": 1,
+      "speed": 2,
+      "crit_chance": 2
+    },
+    "color": "#fbbf24",
+    "glow_color": "#fcd34d"
+  },
+  "tank": {
+    "name": "Tank",
+    "description": "An immovable fortress. Massive HP and defense, low damage but incredible staying power.",
+    "icon": "tank",
+    "primary_stats": {
+      "maxhealth": 200,
+      "attack": 6,
+      "defense": 20,
+      "mana": 25,
+      "accuracy": 80,
+      "speed": 4,
+      "crit_chance": 2
+    },
+    "mana_regen": 1,
+    "starting_skills": ["fortify", "body_check"],
+    "stat_growth": {
+      "maxhealth": 18,
+      "attack": 1,
+      "defense": 4,
+      "mana": 2,
+      "accuracy": 0,
+      "speed": 0,
+      "crit_chance": 0
+    },
+    "color": "#78716c",
+    "glow_color": "#a8a29e"
+  },
+  "ranger": {
+    "name": "Ranger",
+    "description": "A versatile ranged specialist. High accuracy, evasion, and balanced stats with utility skills.",
+    "icon": "ranger",
+    "primary_stats": {
+      "maxhealth": 85,
+      "attack": 10,
+      "defense": 6,
+      "mana": 60,
+      "accuracy": 100,
+      "speed": 14,
+      "crit_chance": 12
+    },
+    "mana_regen": 5,
+    "starting_skills": ["multishot", "evasion"],
+    "stat_growth": {
+      "maxhealth": 7,
+      "attack": 2,
+      "defense": 1,
+      "mana": 5,
+      "accuracy": 1,
+      "speed": 2,
+      "crit_chance": 1
+    },
+    "color": "#22c55e",
+    "glow_color": "#4ade80"
+  }
+}

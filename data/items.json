@@ -1,0 +1,402 @@
+{
+  "rarity": {
+    "common": {
+      "name": "Common",
+      "color": "#9ca3af",
+      "glow": "rgba(156, 163, 175, 0.3)",
+      "stat_multiplier": 1.0,
+      "price_multiplier": 1.0
+    },
+    "uncommon": {
+      "name": "Uncommon",
+      "color": "#4ade80",
+      "glow": "rgba(74, 222, 128, 0.4)",
+      "stat_multiplier": 1.25,
+      "price_multiplier": 2.0
+    },
+    "rare": {
+      "name": "Rare",
+      "color": "#60a5fa",
+      "glow": "rgba(96, 165, 250, 0.5)",
+      "stat_multiplier": 1.5,
+      "price_multiplier": 4.0
+    },
+    "epic": {
+      "name": "Epic",
+      "color": "#a855f7",
+      "glow": "rgba(168, 85, 247, 0.6)",
+      "stat_multiplier": 2.0,
+      "price_multiplier": 8.0
+    },
+    "legendary": {
+      "name": "Legendary",
+      "color": "#fbbf24",
+      "glow": "rgba(251, 191, 36, 0.7)",
+      "stat_multiplier": 3.0,
+      "price_multiplier": 20.0
+    },
+    "mythic": {
+      "name": "Mythic",
+      "color": "#f97316",
+      "glow": "rgba(249, 115, 22, 0.8)",
+      "stat_multiplier": 5.0,
+      "price_multiplier": 50.0
+    }
+  },
+  "weapons": {
+    "iron_sword": {
+      "id": "iron_sword",
+      "name": "Iron Sword",
+      "type": "weapon",
+      "slot": "main_hand",
+      "description": "A reliable blade forged from quality iron.",
+      "base_stats": { "attack": 12, "crit_chance": 2 },
+      "rarity": "common",
+      "value": 50,
+      "level_req": 1,
+      "icon": "sword"
+    },
+    "steel_longsword": {
+      "id": "steel_longsword",
+      "name": "Steel Longsword",
+      "type": "weapon",
+      "slot": "main_hand",
+      "description": "A well-balanced longsword of tempered steel.",
+      "base_stats": { "attack": 20, "crit_chance": 4, "accuracy": 3 },
+      "rarity": "uncommon",
+      "value": 200,
+      "level_req": 3,
+      "icon": "longsword"
+    },
+    "mage_staff": {
+      "id": "mage_staff",
+      "name": "Apprentice's Staff",
+      "type": "weapon",
+      "slot": "main_hand",
+      "description": "A wooden staff that channels magical energy.",
+      "base_stats": { "attack": 8, "mana": 20, "crit_chance": 5 },
+      "rarity": "common",
+      "value": 60,
+      "level_req": 1,
+      "icon": "staff"
+    },
+    "void_staff": {
+      "id": "void_staff",
+      "name": "Void Staff",
+      "type": "weapon",
+      "slot": "main_hand",
+      "description": "A staff pulsing with void energy.",
+      "base_stats": { "attack": 18, "mana": 50, "crit_chance": 10, "crit_damage": 20 },
+      "rarity": "rare",
+      "value": 800,
+      "level_req": 6,
+      "icon": "void_staff"
+    },
+    "duelist_rapier": {
+      "id": "duelist_rapier",
+      "name": "Duelist's Rapier",
+      "type": "weapon",
+      "slot": "main_hand",
+      "description": "A needle-thin blade designed for precision strikes.",
+      "base_stats": { "attack": 16, "crit_chance": 12, "speed": 3 },
+      "rarity": "uncommon",
+      "value": 300,
+      "level_req": 4,
+      "icon": "rapier"
+    },
+    "dragonslayer_greatsword": {
+      "id": "dragonslayer_greatsword",
+      "name": "Dragonslayer Greatsword",
+      "type": "weapon",
+      "slot": "main_hand",
+      "description": "A massive blade forged to slay dragons. Legends speak of its power.",
+      "base_stats": { "attack": 50, "crit_chance": 15, "crit_damage": 30, "defense": 5 },
+      "rarity": "legendary",
+      "value": 5000,
+      "level_req": 12,
+      "icon": "greatsword"
+    },
+    "ranger_bow": {
+      "id": "ranger_bow",
+      "name": "Ranger's Recurve Bow",
+      "type": "weapon",
+      "slot": "main_hand",
+      "description": "A finely crafted bow with exceptional range.",
+      "base_stats": { "attack": 15, "accuracy": 10, "crit_chance": 8 },
+      "rarity": "uncommon",
+      "value": 250,
+      "level_req": 3,
+      "icon": "bow"
+    },
+    "tank_maul": {
+      "id": "tank_maul",
+      "name": "Guardian's Maul",
+      "type": "weapon",
+      "slot": "main_hand",
+      "description": "A heavy maul that can shatter armor.",
+      "base_stats": { "attack": 14, "defense": 5, "crit_damage": 25 },
+      "rarity": "rare",
+      "value": 600,
+      "level_req": 5,
+      "icon": "maul"
+    }
+  },
+  "armor": {
+    "leather_vest": {
+      "id": "leather_vest",
+      "name": "Leather Vest",
+      "type": "armor",
+      "slot": "chest",
+      "description": "Light protection that doesn't restrict movement.",
+      "base_stats": { "defense": 4, "speed": 2 },
+      "rarity": "common",
+      "value": 40,
+      "level_req": 1,
+      "icon": "leather_vest"
+    },
+    "chainmail": {
+      "id": "chainmail",
+      "name": "Chainmail Hauberk",
+      "type": "armor",
+      "slot": "chest",
+      "description": "Interlinked steel rings offering solid protection.",
+      "base_stats": { "defense": 12, "maxhealth": 20 },
+      "rarity": "uncommon",
+      "value": 180,
+      "level_req": 3,
+      "icon": "chainmail"
+    },
+    "plate_armor": {
+      "id": "plate_armor",
+      "name": "Knight's Plate Armor",
+      "type": "armor",
+      "slot": "chest",
+      "description": "Heavy plate armor worn by royal knights.",
+      "base_stats": { "defense": 25, "maxhealth": 50, "speed": -2 },
+      "rarity": "rare",
+      "value": 1000,
+      "level_req": 6,
+      "icon": "plate_armor"
+    },
+    "mage_robes": {
+      "id": "mage_robes",
+      "name": "Arcane Robes",
+      "type": "armor",
+      "slot": "chest",
+      "description": "Robes woven with mana-conducting threads.",
+      "base_stats": { "defense": 3, "mana": 40, "mana_regen": 2 },
+      "rarity": "uncommon",
+      "value": 220,
+      "level_req": 3,
+      "icon": "robes"
+    },
+    "void_robes": {
+      "id": "void_robes",
+      "name": "Void-Weave Vestments",
+      "type": "armor",
+      "slot": "chest",
+      "description": "Vestments that shift between realities.",
+      "base_stats": { "defense": 8, "mana": 100, "mana_regen": 5, "crit_chance": 5 },
+      "rarity": "epic",
+      "value": 3000,
+      "level_req": 10,
+      "icon": "void_robes"
+    },
+    "shadow_garb": {
+      "id": "shadow_garb",
+      "name": "Shadow Dancer's Garb",
+      "type": "armor",
+      "slot": "chest",
+      "description": "Lightweight armor that moves like liquid shadow.",
+      "base_stats": { "defense": 10, "speed": 5, "crit_chance": 8, "evasion": 10 },
+      "rarity": "rare",
+      "value": 1500,
+      "level_req": 7,
+      "icon": "shadow_garb"
+    },
+    "dragonscale_armor": {
+      "id": "dragonscale_armor",
+      "name": "Dragonscale Armor",
+      "type": "armor",
+      "slot": "chest",
+      "description": "Armor crafted from the scales of an ancient dragon.",
+      "base_stats": { "defense": 40, "maxhealth": 100, "fire_resist": 50, "crit_damage": 15 },
+      "rarity": "legendary",
+      "value": 8000,
+      "level_req": 15,
+      "icon": "dragonscale"
+    }
+  },
+  "accessories": {
+    "health_ring": {
+      "id": "health_ring",
+      "name": "Ring of Vitality",
+      "type": "accessory",
+      "slot": "ring",
+      "description": "A simple ring that enhances life force.",
+      "base_stats": { "maxhealth": 25 },
+      "rarity": "common",
+      "value": 80,
+      "level_req": 1,
+      "icon": "ring"
+    },
+    "mana_ring": {
+      "id": "mana_ring",
+      "name": "Ring of Insight",
+      "type": "accessory",
+      "slot": "ring",
+      "description": "A ring that expands the mind's capacity.",
+      "base_stats": { "mana": 30, "mana_regen": 1 },
+      "rarity": "common",
+      "value": 80,
+      "level_req": 1,
+      "icon": "ring"
+    },
+    "crit_amulet": {
+      "id": "crit_amulet",
+      "name": "Amulet of Precision",
+      "type": "accessory",
+      "slot": "amulet",
+      "description": "An amulet that guides strikes to vital points.",
+      "base_stats": { "crit_chance": 5, "crit_damage": 10 },
+      "rarity": "uncommon",
+      "value": 300,
+      "level_req": 3,
+      "icon": "amulet"
+    },
+    "speed_boots": {
+      "id": "speed_boots",
+      "name": "Boots of Haste",
+      "type": "accessory",
+      "slot": "boots",
+      "description": "Lightweight boots that enhance movement.",
+      "base_stats": { "speed": 5, "evasion": 5 },
+      "rarity": "uncommon",
+      "value": 250,
+      "level_req": 2,
+      "icon": "boots"
+    },
+    "dragon_heart": {
+      "id": "dragon_heart",
+      "name": "Dragon's Heart",
+      "type": "accessory",
+      "slot": "amulet",
+      "description": "A crystallized dragon heart pulsing with power.",
+      "base_stats": { "maxhealth": 50, "attack": 15, "mana": 50, "mana_regen": 3, "crit_chance": 10 },
+      "rarity": "mythic",
+      "value": 25000,
+      "level_req": 20,
+      "icon": "dragon_heart"
+    },
+    "lucky_charm": {
+      "id": "lucky_charm",
+      "name": "Lucky Charm",
+      "type": "accessory",
+      "slot": "ring",
+      "description": "A small charm that seems to bend fate.",
+      "base_stats": { "crit_chance": 3, "evasion": 5, "luck": 10 },
+      "rarity": "rare",
+      "value": 1200,
+      "level_req": 5,
+      "icon": "charm"
+    }
+  },
+  "consumables": {
+    "health_potion": {
+      "id": "health_potion",
+      "name": "Health Potion",
+      "type": "consumable",
+      "description": "Restores 50 HP instantly.",
+      "effects": { "heal": 50 },
+      "rarity": "common",
+      "value": 25,
+      "stackable": true,
+      "max_stack": 10,
+      "icon": "health_potion"
+    },
+    "greater_health_potion": {
+      "id": "greater_health_potion",
+      "name": "Greater Health Potion",
+      "type": "consumable",
+      "description": "Restores 150 HP instantly.",
+      "effects": { "heal": 150 },
+      "rarity": "uncommon",
+      "value": 100,
+      "stackable": true,
+      "max_stack": 5,
+      "icon": "greater_health_potion"
+    },
+    "super_health_potion": {
+      "id": "super_health_potion",
+      "name": "Super Health Potion",
+      "type": "consumable",
+      "description": "Restores 400 HP instantly.",
+      "effects": { "heal": 400 },
+      "rarity": "rare",
+      "value": 400,
+      "stackable": true,
+      "max_stack": 3,
+      "icon": "super_health_potion"
+    },
+    "mana_potion": {
+      "id": "mana_potion",
+      "name": "Mana Potion",
+      "type": "consumable",
+      "description": "Restores 50 Mana instantly.",
+      "effects": { "restore_mana": 50 },
+      "rarity": "common",
+      "value": 30,
+      "stackable": true,
+      "max_stack": 10,
+      "icon": "mana_potion"
+    },
+    "greater_mana_potion": {
+      "id": "greater_mana_potion",
+      "name": "Greater Mana Potion",
+      "type": "consumable",
+      "description": "Restores 150 Mana instantly.",
+      "effects": { "restore_mana": 150 },
+      "rarity": "uncommon",
+      "value": 120,
+      "stackable": true,
+      "max_stack": 5,
+      "icon": "greater_mana_potion"
+    },
+    "elixir": {
+      "id": "elixir",
+      "name": "Elixir of Full Restoration",
+      "type": "consumable",
+      "description": "Fully restores HP and Mana. Cures all status effects.",
+      "effects": { "heal": 9999, "restore_mana": 9999, "cure_all": true },
+      "rarity": "epic",
+      "value": 1000,
+      "stackable": true,
+      "max_stack": 3,
+      "icon": "elixir"
+    },
+    "antidote": {
+      "id": "antidote",
+      "name": "Antidote",
+      "type": "consumable",
+      "description": "Cures poison and burn.",
+      "effects": { "cure": ["poison", "burn"] },
+      "rarity": "common",
+      "value": 20,
+      "stackable": true,
+      "max_stack": 10,
+      "icon": "antidote"
+    },
+    "revival_stone": {
+      "id": "revival_stone",
+      "name": "Phoenix Feather",
+      "type": "consumable",
+      "description": "Revives fallen character with 50% HP. Single use.",
+      "effects": { "revive": true, "heal_percent": 50 },
+      "rarity": "rare",
+      "value": 500,
+      "stackable": true,
+      "max_stack": 3,
+      "icon": "phoenix_feather"
+    }
+  }
+}

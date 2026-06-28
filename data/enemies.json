@@ -1,0 +1,435 @@
+{
+  "enemies": {
+    "goblin": {
+      "name": "Goblin",
+      "description": "A small, green-skinned scavenger with a rusty blade.",
+      "portrait": "goblin",
+      "base_stats": {
+        "maxhealth": 45,
+        "attack": 7,
+        "defense": 2,
+        "mana": 20,
+        "accuracy": 85,
+        "speed": 11,
+        "crit_chance": 5
+      },
+      "level": 1,
+      "xp_reward": 20,
+      "gold_reward": 8,
+      "ai_profile": "aggressive",
+      "skills": ["basic_attack", "throw_rock"],
+      "loot_table": [
+        { "item": "health_potion", "chance": 0.3, "min": 1, "max": 2 },
+        { "item": "iron_sword", "chance": 0.05 },
+        { "item": "gold", "chance": 1.0, "min": 5, "max": 12 }
+      ],
+      "dialogue": {
+        "intro": "A wild Goblin appears!",
+        "low_hp": "The Goblin looks desperate...",
+        "defeat": "The Goblin falls!"
+      }
+    },
+    "dire_wolf": {
+      "name": "Dire Wolf",
+      "description": "A massive wolf with glowing eyes and razor fangs.",
+      "portrait": "wolf",
+      "base_stats": {
+        "maxhealth": 65,
+        "attack": 11,
+        "defense": 4,
+        "mana": 15,
+        "accuracy": 90,
+        "speed": 16,
+        "crit_chance": 12
+      },
+      "level": 2,
+      "xp_reward": 35,
+      "gold_reward": 15,
+      "ai_profile": "predator",
+      "skills": ["basic_attack", "savage_bite", "howl"],
+      "loot_table": [
+        { "item": "health_potion", "chance": 0.25 },
+        { "item": "leather_vest", "chance": 0.1 },
+        { "item": "gold", "chance": 1.0, "min": 10, "max": 20 }
+      ],
+      "dialogue": {
+        "intro": "A Dire Wolf blocks your path!",
+        "low_hp": "The wolf growls, wounded but dangerous...",
+        "defeat": "The wolf collapses with a final howl."
+      }
+    },
+    "skeleton": {
+      "name": "Skeleton Warrior",
+      "description": "Ancient bones animated by dark magic.",
+      "portrait": "skeleton",
+      "base_stats": {
+        "maxhealth": 70,
+        "attack": 9,
+        "defense": 7,
+        "mana": 10,
+        "accuracy": 80,
+        "speed": 7,
+        "crit_chance": 6
+      },
+      "level": 2,
+      "xp_reward": 30,
+      "gold_reward": 10,
+      "ai_profile": "defensive",
+      "skills": ["basic_attack", "bone_shield"],
+      "loot_table": [
+        { "item": "health_potion", "chance": 0.3 },
+        { "item": "chainmail", "chance": 0.08 },
+        { "item": "gold", "chance": 1.0, "min": 8, "max": 15 }
+      ],
+      "dialogue": {
+        "intro": "A Skeleton Warrior rises from the dust!",
+        "low_hp": "Bones rattle as it nears destruction...",
+        "defeat": "The skeleton crumbles to dust."
+      }
+    },
+    "orc": {
+      "name": "Orc Berserker",
+      "description": "A hulking brute driven by battle rage.",
+      "portrait": "orc",
+      "base_stats": {
+        "maxhealth": 110,
+        "attack": 16,
+        "defense": 5,
+        "mana": 25,
+        "accuracy": 80,
+        "speed": 6,
+        "crit_chance": 14
+      },
+      "level": 3,
+      "xp_reward": 55,
+      "gold_reward": 25,
+      "ai_profile": "aggressive",
+      "skills": ["basic_attack", "reckless_swing", "battle_roar"],
+      "loot_table": [
+        { "item": "greater_health_potion", "chance": 0.3 },
+        { "item": "steel_longsword", "chance": 0.1 },
+        { "item": "gold", "chance": 1.0, "min": 20, "max": 35 }
+      ],
+      "dialogue": {
+        "intro": "An Orc Berserker charges!",
+        "low_hp": "The orc's rage intensifies!",
+        "defeat": "The berserker falls, still snarling."
+      }
+    },
+    "bandit": {
+      "name": "Bandit Rogue",
+      "description": "A cunning highwayman with a poisoned dagger.",
+      "portrait": "bandit",
+      "base_stats": {
+        "maxhealth": 75,
+        "attack": 13,
+        "defense": 4,
+        "mana": 30,
+        "accuracy": 95,
+        "speed": 14,
+        "crit_chance": 10
+      },
+      "level": 3,
+      "xp_reward": 45,
+      "gold_reward": 30,
+      "ai_profile": "tactical",
+      "skills": ["basic_attack", "poisoned_blade", "smoke_bomb"],
+      "loot_table": [
+        { "item": "health_potion", "chance": 0.35 },
+        { "item": "duelist_rapier", "chance": 0.08 },
+        { "item": "gold", "chance": 1.0, "min": 25, "max": 40 }
+      ],
+      "dialogue": {
+        "intro": "A Bandit Rogue ambushes you!",
+        "low_hp": "The bandit looks for an escape...",
+        "defeat": "The bandit drops their dagger."
+      }
+    },
+    "void_mage": {
+      "name": "Void Mage",
+      "description": "A scholar of forbidden void magic.",
+      "portrait": "mage",
+      "base_stats": {
+        "maxhealth": 70,
+        "attack": 10,
+        "defense": 5,
+        "mana": 130,
+        "accuracy": 95,
+        "speed": 12,
+        "crit_chance": 15
+      },
+      "level": 4,
+      "xp_reward": 90,
+      "gold_reward": 45,
+      "ai_profile": "caster",
+      "skills": ["void_bolt", "mana_shield", "void_walk", "entropy"],
+      "loot_table": [
+        { "item": "mana_potion", "chance": 0.5 },
+        { "item": "mage_staff", "chance": 0.15 },
+        { "item": "gold", "chance": 1.0, "min": 40, "max": 60 }
+      ],
+      "dialogue": {
+        "intro": "A Void Mage materializes before you!",
+        "low_hp": "The mage's shield flickers...",
+        "defeat": "The mage dissolves into void essence."
+      }
+    },
+    "black_knight": {
+      "name": "Black Knight",
+      "description": "A fallen knight clad in cursed armor.",
+      "portrait": "knight",
+      "base_stats": {
+        "maxhealth": 140,
+        "attack": 18,
+        "defense": 15,
+        "mana": 40,
+        "accuracy": 80,
+        "speed": 5,
+        "crit_chance": 8
+      },
+      "level": 5,
+      "xp_reward": 130,
+      "gold_reward": 60,
+      "ai_profile": "tactical",
+      "skills": ["basic_attack", "shield_bash", "rally", "dark_slash"],
+      "loot_table": [
+        { "item": "greater_health_potion", "chance": 0.4 },
+        { "item": "plate_armor", "chance": 0.12 },
+        { "item": "gold", "chance": 1.0, "min": 50, "max": 80 }
+      ],
+      "dialogue": {
+        "intro": "The Black Knight stands in your way!",
+        "low_hp": "The knight's armor cracks...",
+        "defeat": "The Black Knight falls, armor clattering."
+      }
+    },
+    "slime": {
+      "name": "Gelatinous Slime",
+      "description": "A corrosive blob of magical ooze.",
+      "portrait": "slime",
+      "base_stats": {
+        "maxhealth": 100,
+        "attack": 8,
+        "defense": 8,
+        "mana": 20,
+        "accuracy": 75,
+        "speed": 4,
+        "crit_chance": 3
+      },
+      "level": 3,
+      "xp_reward": 40,
+      "gold_reward": 15,
+      "ai_profile": "defensive",
+      "skills": ["basic_attack", "acid_spit", "absorb", "split"],
+      "loot_table": [
+        { "item": "health_potion", "chance": 0.4 },
+        { "item": "antidote", "chance": 0.2 },
+        { "item": "gold", "chance": 1.0, "min": 10, "max": 20 }
+      ],
+      "dialogue": {
+        "intro": "A Gelatinous Slime oozes forward!",
+        "low_hp": "The slime shrinks in size...",
+        "defeat": "The slime evaporates."
+      }
+    },
+    "giant_spider": {
+      "name": "Giant Spider",
+      "description": "An enormous arachnid with venomous fangs.",
+      "portrait": "spider",
+      "base_stats": {
+        "maxhealth": 80,
+        "attack": 14,
+        "defense": 5,
+        "mana": 20,
+        "accuracy": 90,
+        "speed": 15,
+        "crit_chance": 12
+      },
+      "level": 4,
+      "xp_reward": 65,
+      "gold_reward": 30,
+      "ai_profile": "predator",
+      "skills": ["basic_attack", "venom_bite", "web_shot", "scuttle"],
+      "loot_table": [
+        { "item": "antidote", "chance": 0.3 },
+        { "item": "speed_boots", "chance": 0.1 },
+        { "item": "gold", "chance": 1.0, "min": 25, "max": 40 }
+      ],
+      "dialogue": {
+        "intro": "A Giant Spider descends from above!",
+        "low_hp": "The spider limps on damaged legs...",
+        "defeat": "The spider curls up lifeless."
+      }
+    },
+    "ancient_dragon": {
+      "name": "Ancient Dragon",
+      "description": "A primordial wyrm, scales like molten steel.",
+      "portrait": "dragon",
+      "base_stats": {
+        "maxhealth": 600,
+        "attack": 38,
+        "defense": 22,
+        "mana": 220,
+        "accuracy": 85,
+        "speed": 8,
+        "crit_chance": 18
+      },
+      "level": 12,
+      "xp_reward": 1200,
+      "gold_reward": 600,
+      "ai_profile": "boss",
+      "skills": ["claw_swipe", "fire_breath", "tail_sweep", "dragon_roar", "ancient_might", "meteor_strike"],
+      "phases": [
+        { "threshold": 1.0, "name": "Awakening", "skills": ["claw_swipe", "fire_breath"] },
+        { "threshold": 0.7, "name": "Enraged", "skills": ["claw_swipe", "fire_breath", "tail_sweep", "dragon_roar"], "attack_bonus": 8, "crit_bonus": 5 },
+        { "threshold": 0.4, "name": "Ancient Wrath", "skills": ["claw_swipe", "fire_breath", "tail_sweep", "dragon_roar", "ancient_might", "meteor_strike"], "attack_bonus": 18, "crit_bonus": 12, "defense_bonus": 8 }
+      ],
+      "loot_table": [
+        { "item": "elixir", "chance": 0.6 },
+        { "item": "dragonslayer_greatsword", "chance": 0.15 },
+        { "item": "dragonscale_armor", "chance": 0.1 },
+        { "item": "dragon_heart", "chance": 0.05 },
+        { "item": "super_health_potion", "chance": 0.8, "min": 2, "max": 4 },
+        { "item": "gold", "chance": 1.0, "min": 500, "max": 800 }
+      ],
+      "dialogue": {
+        "intro": "The ground shakes as an ANCIENT DRAGON descends!",
+        "phase_1": "The dragon's eyes burn with ancient fury!",
+        "phase_2": "The dragon unleashes its true power!",
+        "low_hp": "The mighty dragon struggles to stay airborne...",
+        "defeat": "The Ancient Dragon crashes down, defeated!"
+      }
+    },
+    "necromancer": {
+      "name": "Necromancer Lord",
+      "description": "Master of death, commander of the undead.",
+      "portrait": "necromancer",
+      "base_stats": {
+        "maxhealth": 180,
+        "attack": 16,
+        "defense": 10,
+        "mana": 200,
+        "accuracy": 90,
+        "speed": 10,
+        "crit_chance": 12
+      },
+      "level": 8,
+      "xp_reward": 400,
+      "gold_reward": 200,
+      "ai_profile": "summoner",
+      "skills": ["death_bolt", "raise_skeleton", "life_drain", "bone_prison", "soul_harvest", "lich_transformation"],
+      "phases": [
+        { "threshold": 1.0, "name": "Necromancer", "skills": ["death_bolt", "raise_skeleton", "life_drain"] },
+        { "threshold": 0.5, "name": "Lich Form", "skills": ["death_bolt", "raise_skeleton", "life_drain", "bone_prison", "soul_harvest", "lich_transformation"], "attack_bonus": 10, "mana_bonus": 50 }
+      ],
+      "loot_table": [
+        { "item": "greater_mana_potion", "chance": 0.6, "min": 2, "max": 3 },
+        { "item": "void_staff", "chance": 0.15 },
+        { "item": "necrotic_amulet", "chance": 0.1 },
+        { "item": "elixir", "chance": 0.3 },
+        { "item": "gold", "chance": 1.0, "min": 150, "max": 250 }
+      ],
+      "dialogue": {
+        "intro": "Death itself bows before the Necromancer Lord!",
+        "phase_1": "The necromancer transforms into a Lich!",
+        "low_hp": "The lich's phylactery flickers...",
+        "defeat": "The lord of death meets their end."
+      }
+    },
+    "stone_golem": {
+      "name": "Stone Golem",
+      "description": "An ancient guardian carved from living rock.",
+      "portrait": "golem",
+      "base_stats": {
+        "maxhealth": 200,
+        "attack": 15,
+        "defense": 25,
+        "mana": 10,
+        "accuracy": 75,
+        "speed": 3,
+        "crit_chance": 5
+      },
+      "level": 6,
+      "xp_reward": 200,
+      "gold_reward": 80,
+      "ai_profile": "defensive",
+      "skills": ["basic_attack", "rock_throw", "earthquake", "harden"],
+      "loot_table": [
+        { "item": "plate_armor", "chance": 0.15 },
+        { "item": "health_ring", "chance": 0.1 },
+        { "item": "gold", "chance": 1.0, "min": 60, "max": 100 }
+      ],
+      "dialogue": {
+        "intro": "A Stone Golem awakens to block your path!",
+        "low_hp": "Cracks spread across its stone body...",
+        "defeat": "The golem crumbles into rubble."
+      }
+    },
+    "frost_wraith": {
+      "name": "Frost Wraith",
+      "description": "A spectral entity of ice and hatred.",
+      "portrait": "wraith",
+      "base_stats": {
+        "maxhealth": 90,
+        "attack": 20,
+        "defense": 4,
+        "mana": 150,
+        "accuracy": 95,
+        "speed": 18,
+        "crit_chance": 20
+      },
+      "level": 7,
+      "xp_reward": 280,
+      "gold_reward": 120,
+      "ai_profile": "caster",
+      "skills": ["frost_bolt", "ice_shard", "blizzard", "phase_shift", "absolute_zero"],
+      "loot_table": [
+        { "item": "mana_potion", "chance": 0.5 },
+        { "item": "crit_amulet", "chance": 0.15 },
+        { "item": "gold", "chance": 1.0, "min": 100, "max": 150 }
+      ],
+      "dialogue": {
+        "intro": "A Frost Wraith materializes, chilling the air!",
+        "low_hp": "The wraith's form destabilizes...",
+        "defeat": "The wraith disperses into snowflakes."
+      }
+    },
+    "demon_lord": {
+      "name": "Demon Lord",
+      "description": "A greater demon from the infernal planes.",
+      "portrait": "demon",
+      "base_stats": {
+        "maxhealth": 450,
+        "attack": 32,
+        "defense": 18,
+        "mana": 180,
+        "accuracy": 88,
+        "speed": 12,
+        "crit_chance": 20
+      },
+      "level": 15,
+      "xp_reward": 2000,
+      "gold_reward": 1000,
+      "ai_profile": "boss",
+      "skills": ["infernal_strike", "hellfire", "demonic_pact", "summon_imps", "apocalypse", "soul_feast"],
+      "phases": [
+        { "threshold": 1.0, "name": "Demon Lord", "skills": ["infernal_strike", "hellfire", "demonic_pact"] },
+        { "threshold": 0.6, "name": "Enraged Demon", "skills": ["infernal_strike", "hellfire", "demonic_pact", "summon_imps", "apocalypse"], "attack_bonus": 12, "crit_bonus": 10 },
+        { "threshold": 0.3, "name": "True Form", "skills": ["infernal_strike", "hellfire", "demonic_pact", "summon_imps", "apocalypse", "soul_feast"], "attack_bonus": 25, "crit_bonus": 20, "defense_bonus": 10, "speed_bonus": 4 }
+      ],
+      "loot_table": [
+        { "item": "elixir", "chance": 0.8 },
+        { "item": "dragon_heart", "chance": 0.1 },
+        { "item": "super_health_potion", "chance": 1.0, "min": 3, "max": 5 },
+        { "item": "gold", "chance": 1.0, "min": 800, "max": 1200 }
+      ],
+      "dialogue": {
+        "intro": "A DEMON LORD tears through reality!",
+        "phase_1": "The demon's true power awakens!",
+        "phase_2": "You face the demon's TRUE FORM!",
+        "low_hp": "The demon howls in rage and pain...",
+        "defeat": "The Demon Lord is banished back to the abyss!"
+      }
+    }
+  }
+}
